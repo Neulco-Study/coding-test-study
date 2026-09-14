@@ -53,8 +53,38 @@ class Main {
         ArrayDeque<State> queue = new ArrayDeque<>();
         boolean[][][] visited = new boolean[n][m][2];
 
-        // TODO: 시작 상태를 큐에 넣고 BFS로 최단 거리를 구한다.
-        // TODO: 같은 칸이라도 벽을 부순 상태와 부수지 않은 상태를 따로 방문 처리한다.
+        queue.add(new State(0, 0, 1, 0));
+        visited[0][0][0] = true;
+
+        while (!queue.isEmpty()) {
+            State current = queue.poll();
+
+            if (current.row == n - 1 && current.col == m - 1) {
+                return current.distance;
+            }
+
+            for (int direction = 0; direction < 4; direction++) {
+                int nextRow = current.row + DR[direction];
+                int nextCol = current.col + DC[direction];
+
+                if (nextRow < 0 || nextRow >= n || nextCol < 0 || nextCol >= m) {
+                    continue;
+                }
+
+                if (map[nextRow][nextCol] == 0 && !visited[nextRow][nextCol][current.wallBroken]) {
+                    visited[nextRow][nextCol][current.wallBroken] = true;
+                    queue.add(new State(
+                            nextRow,
+                            nextCol,
+                            current.distance + 1,
+                            current.wallBroken
+                    ));
+                } else if (map[nextRow][nextCol] == 1 && current.wallBroken == 0 && !visited[nextRow][nextCol][1]) {
+                    visited[nextRow][nextCol][1] = true;
+                    queue.add(new State(nextRow, nextCol, current.distance + 1, 1));
+                }
+            }
+        }
 
         return -1;
     }
