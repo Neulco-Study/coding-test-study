@@ -1,8 +1,8 @@
-# 📚 팀늘코 코딩테스트 스터디
+# 📘 팀늘코 코딩테스트 스터디 운영 가이드
 ## 📌 스터디 개요
 기간: 주 5회(평일) + 주말
 
-인원: 2명
+인원: 4명
 
 플랫폼: 백준, 프로그래머스, LeetCode 등
 
@@ -25,25 +25,25 @@
 ```
 Repository 구조:
 ├── Week01/
-│   ├── 1201_BOJ_두수의합_홍길동.py
-│   ├── 1202_PGS_문자열압축_홍길동.py
-│   ├── 1203_LTC_TwoSum_홍길동.py
-│   ├── 1204_BOJ_미로탐색_홍길동.py
-│   ├── 1205_PGS_타겟넘버_홍길동.py
-│   ├── 1206_BOJ_최단경로_홍길동.py
-│   ├── 1207_LTC_ValidParentheses_홍길동.py
-│   └── README.md
+│   ├── BOJ_두수의합_홍길동_1201.java
+│   ├── PGS_문자열압축_홍길동_1202.java
+│   ├── LTC_TwoSum_홍길동_1203.java
+│   ├── BOJ_미로탐색_홍길동_1204.java
+│   ├── PGS_타겟넘버_홍길동_1205.java
+│   ├── BOJ_최단경로_홍길동_1206.java
+│   └── LTC_ValidParentheses_홍길동_1207.java
 ├── Week02/
 │   └── ...
 ```
 **폴더 및 파일명 규칙:**
 
 - 폴더: Week01, Week02, ...
-- 파일명: MMDD_출처_문제이름_이름.확장자
-    - MMDD: 문제 푼 날짜 (예: 1201 = 12월 1일)
-    - 출처: BOJ(백준), PGS(프로그래머스), LTC(LeetCode) 등 (3자리 약어)
-    - 문제이름: 공백 없이 설정
-    - 이름: 본인 이름
+- 파일명: 출처_문제이름_이름_MMDD.확장자
+  - 출처: BOJ(백준), PGS(프로그래머스), LTC(LeetCode) 등 (3자리 약어)
+  - 문제이름: 공백 없이 설정
+  - 이름: 본인 이름
+  - MMDD: 문제 푼 날짜 (예: 1201 = 12월 1일)
+  - Java 클래스명: 확장자를 제외한 파일명과 동일하게 설정
 
 **출처 약어:**
 
@@ -69,7 +69,7 @@ Repository 구조:
 ## 📚 참고 자료
 ### 문제 참고
 
-- 팀늘코 과제: 주차별 백준 과제
+- 팀늘코 과제: [주차별 프로그래머스 과제](README.md#-주차별-코딩테스트-과제)
 - 프로그래머스: [코딩테스트 연습](https://school.programmers.co.kr/learn/challenges?order=recent)
 - Neetcode: [NeetCode 150](https://neetcode.io/practice/practice/neetcode150)
 - Leetcode: [LeetCode 문제모음](https://leetcode.com/problemset/)

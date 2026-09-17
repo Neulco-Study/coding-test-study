@@ -21,7 +21,7 @@ import java.util.StringTokenizer;
  * 조건을 만족하는 최소 길이를 출력한다.
  * 만족하는 구간이 없으면 0을 출력한다.
  */
-class Main {
+public class BOJ_부분합_송시연_0913 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -23,7 +23,7 @@ import java.util.StringTokenizer;
  * 최단 거리를 출력한다.
  * 도착할 수 없으면 -1을 출력한다.
  */
-class Main {
+public class BOJ_벽부수고이동하기_송시연_0913 {
 
     private static final int[] DR = {-1, 1, 0, 0};
     private static final int[] DC = {0, 0, -1, 1};
