@@ -4,7 +4,7 @@ package Week01.그래프_PGS;
 // dfs
 // 모든 컴퓨터를 기점으로 DFS를 수행. 이미 방문된 컴퓨터는 건너뜀
 // 네트워크의 개수를 반환
-public class PG_네트워크_김준현_0915 {
+public class PGS_네트워크_김준현_0915 {
 	static class Solution {
 		public static void main(String[] args) {
 			Solution sol = new Solution();

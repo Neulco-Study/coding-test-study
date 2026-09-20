@@ -3,7 +3,7 @@ package Week01.그래프_PGS;
 // 9월 16일 화요일 풀이시간 30분
 // dfs
 // 가능한 모든 선택 조합을 탐색하는 DFS(완전탐색) 문제
-public class PG_타겟넘버_김준현_0916 {
+public class PGS_타겟넘버_김준현_0916 {
 	static class Solution {
 		public static void main(String[] args) {
 			Solution sol = new Solution();
