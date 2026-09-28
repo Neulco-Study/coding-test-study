@@ -6,7 +6,10 @@ import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.StringTokenizer;
 
-public class 문자열집합_김준현 {
+// 0926 토요일
+// 풀이시간: 10분
+// hashset
+public class 문자열집합_김준현_0928 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
